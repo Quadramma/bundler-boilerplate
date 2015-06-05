@@ -5,17 +5,19 @@ boilerplate para sitios web ''one page'' con riotjs. Bundling con jakubpawlowicz
 
 #Instalar
 
-npm install -g assets-packager
-npm install riot -g
+- npm install -g assets-packager
+- npm install riot -g
 
 #Compilar
 
-assetspkg -c assets.yml -g
+- riot public/tags public/javascripts/tags.js
+- assetspkg -c assets.yml -g --js-bundle-to "../deploy" --css-bundle-to "../deploy"
 
-assetspkg -c assets.yml -g --js-bundle-to "../deploy" --css-bundle-to "../deploy"
-
-riot public/tags public/javascripts/tags.js
 
 #HTML Boilerplate
 
-htmlboiler
+Utiliza el pluggin de sublime 
+
+- htmlboiler
+
+Crea un html boilerplate.
