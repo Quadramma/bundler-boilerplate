@@ -1,0 +1,9 @@
+stylesheets:
+  application: 
+  	- 'app'
+javascripts:
+  application:
+    - 'vendor/vendor'
+    - 'vendor/riot.min'
+    - 'tags'
+    - 'app'
